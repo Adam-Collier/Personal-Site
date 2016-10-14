@@ -1,0 +1,17 @@
+---
+layout: page
+title: Code
+description: blah blah blah for now until i can think of something
+
+
+---
+
+{% include header.html %}
+
+<section class="code-content">
+	{% for post in site.categories.code %}
+	<a class = "code-thumb" href = "{{post.url}}"><img src = "img/code/{{post.cover}}"></a>
+	{% endfor %}
+</section>
+<div class = "footer-space">
+	{% include footer.html %}

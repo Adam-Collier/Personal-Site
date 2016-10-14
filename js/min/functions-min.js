@@ -1,0 +1,1 @@
+$(document).ready(function(){$(window).scroll(function(){var n=$(this).scrollTop(),o=[".fine-art",".design",".web"];o.forEach(function(o){n>$(o).offset().top-500&&$(o).each(function(){$(o).children().addClass("is-showing")})})})});
