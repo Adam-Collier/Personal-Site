@@ -13,11 +13,16 @@
     {% if site.google_analytics %}
     <!-- google analytics async -->
     {% endif %}
+    <!-- disbale the chache for page transitions -->
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="pragma" content="no-cache" />
   </head>
-  <body>
+  <body onunload="">
 
   {{ content }}
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src= "/js/functions.js"></script>
+  <script src= "/js/transition.js"></script>
   </body>
 </html>
