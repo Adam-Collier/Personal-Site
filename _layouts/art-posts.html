@@ -6,7 +6,7 @@
     <meta name="description" content="{{ page.description }}" />
     {% endif %}
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <link rel="stylesheet" href="/css/main.css" type="text/css" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css" type="text/css" />
     {% if site.feedburner %}
     <link href="http://feeds.feedburner.com/{{ site.feedburner.id }}" rel="alternate" title="{{ site.title }}" type="application/atom+xml" />
     {% endif %}
@@ -27,12 +27,8 @@
       {% include footer.html %}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
-<<<<<<< HEAD
     <script src= "{{ site.baseurl }}/js/transition.js"></script>
-=======
-    <script src= "/js/transition.js"></script>
->>>>>>> 44815a41c1b747fe3030a2e1798cfade43ee55e2
-  </body>
+
 
 
 </html>

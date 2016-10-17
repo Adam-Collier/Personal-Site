@@ -10,7 +10,7 @@ description: blah blah blah for now until i can think of something
 
 <section class="code-content">
 	{% for post in site.categories.code %}
-	<a class = "code-thumb" href = "{{post.url}}"><img src = "img/code/{{post.cover}}"></a>
+	<a class = "code-thumb" href = "{{ site.baseurl }}{{post.url}}"><img src = "{{ site.baseurl }}/img/code/{{post.cover}}"></a>
 	{% endfor %}
 </section>
 <div class = "footer-space">
