@@ -5,7 +5,7 @@ $("img").css("display", "none");
 
 $("body").fadeIn(700);
 $("img").fadeIn(700);
-
+/*
 $("a").click(function(event){
 event.preventDefault();
 linkLocation = this.href;
@@ -16,5 +16,6 @@ $("img").fadeOut(400, redirectPage);
 function redirectPage() {
 window.location = linkLocation;
 }
+*/
 
 });
