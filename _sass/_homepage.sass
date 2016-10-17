@@ -1,0 +1,120 @@
+img
+	height: 500px
+	padding: 30px 0px
+.fine-art
+	display: flex
+	justify-content: center
+	align-content: center
+	background: #FFC7C7
+	position: relative
+	overflow-x: hidden
+	overflow-y: hidden
+	width: 100%
+
+.design
+	display: flex
+	justify-content: center
+	align-content: center
+	background: #FFD5AD
+	position: relative
+
+
+.web
+	display: flex
+	justify-content: center
+	align-content: center
+	background: #C7DEFF
+	position: relative
+
+.homepage div
+	transition: all 800ms ease-in-out
+
+
+
+.overlay
+	position: absolute
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	background-color: rgba(0,0,0,0.05)
+	width: 100%
+	height: 100%
+	overflow: hidden
+	opacity: 0
+
+
+.overlay a
+	font-family: Noto sans
+	font-weight: 500
+	background: rgba(250,250,250,0.75)
+	display: inline-block
+	text-decoration: none
+	color: black
+	font-size: 35px
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	padding: 10px 110px
+	border-radius: 3px
+	opacity: 0
+	transform: translateX(-100%)
+	transition: all 600ms ease-in-out
+
+.is-showing
+	.overlay
+		opacity: 1
+	.overlay a
+		opacity: 1
+		transform: translateX(-50%)
+	a 
+		h1
+			opacity: 1
+
+.space
+	height: 500px
+	background: #9ce8d1
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-direction: column
+	transition: all 300ms ease-in-out
+	overflow: hidden
+	h2
+		margin: 0px
+		color: white
+	h1
+		display: block
+		color: white
+		margin: 0
+		font-size: 70px
+		font-weight: 400
+		opacity: 0
+		transition: all 800ms ease-in-out
+
+	a
+		text-decoration: none
+		
+.email-i
+	height: 150px
+	margin-top: -60px
+	fill: white
+	transform: translateY(-100%)
+	opacity: 0
+	transition: all 500ms ease-in-out
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

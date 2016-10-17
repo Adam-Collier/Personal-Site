@@ -1,0 +1,18 @@
+---
+layout: page
+title: Fine Art
+description: My work serves as a fragmentation of the expected experience by renegotiating, through visual stimulus, what we view as ‘the everyday’. My practice asserts itself through the use of appropriated sculpture informed by painting.
+---
+
+{% include header.html %}
+
+<section class="art-content">
+	{% for post in site.categories.art %}
+	<a class = "article-thumb" style = "background-image: url(img/art/{{post.cover}})" href = "{{post.url}}"></a>
+	{% endfor %}
+</section>
+<div class = "footer-space">
+	{% include footer.html %}
+
+
+
