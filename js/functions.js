@@ -8,7 +8,7 @@ $(window).scroll(function(){
 
 var wScroll = $(this).scrollTop();
 
-var storyFade = [".fine-art", ".design", ".web", ".space"];
+var storyFade = [".fine-art", ".design", ".web"];
 
 storyFade.forEach(function(storyFade){
   if ($(window).width() < 1500) {

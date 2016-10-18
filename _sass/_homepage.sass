@@ -5,31 +5,46 @@ img
 	display: flex
 	justify-content: center
 	align-content: center
-	background: #FFC7C7
+	height: 600px
 	position: relative
 	overflow-x: hidden
 	overflow-y: hidden
 	width: 100%
+	background: #FFC7C8
+	background: url(/img/DVD-Drive.png), #FFC7C8
+		position: center 300px
+		size: auto 700px
+		repeat: no-repeat
+		attachment: fixed
+
 
 .design
 	display: flex
 	justify-content: center
 	align-content: center
-	background: #FFD5AD
+	height: 600px
 	position: relative
+	background: url(/img/Flam.png), #FFD5AD
+		position: center 230px
+		size: auto 700px
+		repeat: no-repeat
+		attachment: fixed
 
 
 .web
+	height: 600px
 	display: flex
 	justify-content: center
 	align-content: center
-	background: #C7DEFF
 	position: relative
+	background: url(/img/Google.jpg), #C7DEFF
+		position: center 400px
+		size: auto 400px
+		repeat: no-repeat
+		attachment: fixed
 
 .homepage div
-	transition: all 800ms ease-in-out
-
-
+	transition: all 500ms ease-in-out
 
 .overlay
 	position: absolute
@@ -37,50 +52,73 @@ img
 	bottom: 0
 	left: 0
 	right: 0
-	background-color: rgba(0,0,0,0.05)
+	background-color: rgba(250,250,250,0)
 	width: 100%
 	height: 100%
 	overflow: hidden
 	opacity: 0
 
-
 .overlay a
-	font-family: Noto sans
+	font-family: Noto Sans
 	font-weight: 500
-	background: rgba(250,250,250,0.75)
 	display: inline-block
 	text-decoration: none
 	color: black
-	font-size: 35px
+	font-size: 100px
 	position: absolute
 	top: 50%
 	left: 50%
-	transform: translate(-50%, -50%)
-	padding: 10px 110px
-	border-radius: 3px
 	opacity: 0
-	transform: translateX(-100%)
+	transform: translate(-50%, -50%)
 	transition: all 600ms ease-in-out
+
+.design
+	.overlay a
+		color: white
+		margin-top: -60px
+.design
+	.overlay
+		background-color: rgba(250,250,250,0.1)
+
+.web
+	.overlay a
+		margin-top: -80px
+		color: white
+.fine-art
+	.overlay a
+		margin-top: -30px
+		color: white
+
+
+
+
+
+
+
+
+
+
 
 .is-showing
 	.overlay
 		opacity: 1
 	.overlay a
 		opacity: 1
-		transform: translateX(-50%)
 	a 
 		h1
 			opacity: 1
 
 .space
 	height: 500px
-	background: #9ce8d1
+	background: #ff4c4f
+	width: 100%
 	display: flex
 	justify-content: center
 	align-items: center
 	flex-direction: column
-	transition: all 300ms ease-in-out
+	transition: all 200ms ease-in-out
 	overflow: hidden
+	text-decoration: none
 	h2
 		margin: 0px
 		color: white
@@ -90,19 +128,19 @@ img
 		margin: 0
 		font-size: 70px
 		font-weight: 400
-		opacity: 0
-		transition: all 800ms ease-in-out
+		transition: all 200ms ease-in-out
 
 	a
 		text-decoration: none
+
+	&:hover
+		background: rgba(216, 33, 33, 1)
 		
 .email-i
 	height: 150px
 	margin-top: -60px
 	fill: white
-	transform: translateY(-100%)
-	opacity: 0
-	transition: all 500ms ease-in-out
+	transition: all 200ms ease-in-out
 
 
 
