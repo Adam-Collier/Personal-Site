@@ -38,4 +38,5 @@ storyFade.forEach(function(storyFade){
 
 
 //closing document ready and window scroll
-}); 
+});
+ 

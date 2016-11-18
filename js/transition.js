@@ -17,5 +17,3 @@ function redirectPage() {
 window.location = linkLocation;
 }
 */
-
-});
