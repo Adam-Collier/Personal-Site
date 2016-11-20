@@ -1,8 +1,3 @@
-$( document ).ready(function(){
-
-
-
-
 //Get started!
 $(window).scroll(function(){
 
@@ -12,7 +7,7 @@ var storyFade = [".fine-art", ".design", ".web"];
 
 storyFade.forEach(function(storyFade){
   if ($(window).width() < 1500) {
-        if(wScroll > $(storyFade).offset().top-200 && wScroll < $(storyFade).offset().top+300) {
+        if(wScroll > $(storyFade).offset().top-250 && wScroll < $(storyFade).offset().top+300) {
    		$(storyFade).each(function(){
         $(storyFade).addClass('is-showing');
     	});
@@ -38,5 +33,5 @@ storyFade.forEach(function(storyFade){
 
 
 //closing document ready and window scroll
-});
+
  
